@@ -2,18 +2,50 @@ package com.driver;
 
 public class Vehicle {
 
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public int getCurrentSpeed()
+    {
+        return currentSpeed;
+    }
+
+    public void setCurrentSpeed(int currentSpeed)
+    {
+        this.currentSpeed = currentSpeed;
+    }
+
+    public int getCurrentDirection()
+    {
+        return currentDirection;
+    }
+
+    public void setCurrentDirection(int currentDirection)
+    {
+        this.currentDirection = currentDirection;
+    }
+
     public String name;
     public int currentSpeed;
     public int currentDirection;
 
-    public Vehicle()
+    public Vehicle(String name)
     {
         this.name = name;
         this.currentSpeed = 0;
         this.currentDirection = 0;
     }
+    public Vehicle()
+    {
 
-
+    }
 
     public void steer(int direction)
     {
@@ -32,4 +64,6 @@ public class Vehicle {
     {
         this.currentSpeed = 0;
         System.out.println("stop method called - The vehicle is stopped");
-    }}
+    }
+
+}
